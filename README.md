@@ -172,6 +172,65 @@ Features include:
 
 ---
 
+## Installation & Setup
+
+### 1. Hardware Connections
+
+Connect the components to the ESP32 as shown in the circuit diagram:
+
+- HC-SR04 ultrasonic sensor
+- Micro servo motor
+- LED proximity ladder
+- Piezo buzzer
+- Analog joystick
+- Push button
+
+Refer to the wiring diagram: ![Circuit Diagram](Robot_Radar-img-3.png)
+
+---
+
+### 2. Install Arduino IDE
+
+Download and install the Arduino IDE:
+
+https://www.arduino.cc/en/software
+
+---
+
+### 3. Install ESP32 Board Support
+
+1. Open Arduino IDE
+2. Go to **File → Preferences**
+3. Add the following URL to *Additional Board Manager URLs*:
+
+https://dl.espressif.com/dl/package_esp32_index.json
+
+
+4. Go to **Tools → Board → Board Manager**
+5. Install **ESP32 by Espressif Systems**
+
+---
+
+### 4. Upload Firmware
+
+1. Open the firmware file: https://github.com/adithya-a-labs/esp32-robot-radar-system/blob/main/firmware/robot_radar_firmware.ino
+2. Select the correct board: ESP32 Dev Module
+
+3. Connect the ESP32 via USB
+4. Click **Upload**
+
+---
+
+### 5. Connect to Radar Dashboard
+
+1. Power the ESP32
+2. Connect to the WiFi network created by the ESP32
+3. Open a browser and navigate to the dashboard IP
+
+The radar interface will display the live scanning system.
+
+---
+
 
 ## Future Improvements
 
