@@ -171,6 +171,37 @@ Features include:
 ![Circuit Diagram](Robot_Radar-img-3.png)
 
 ---
+## Wiring Connections
+
+
+| Component          | ESP32 Pin | Description                 |
+| ------------------ | --------- | --------------------------- |
+| HC-SR04 Trigger    | GPIO 5    | Sends ultrasonic pulse      |
+| HC-SR04 Echo       | GPIO 18   | Receives reflected signal   |
+| Servo Motor Signal | GPIO 13   | Controls radar sweep motion |
+| Buzzer             | GPIO 4    | Audio proximity alert       |
+| LED 1              | GPIO 16   | Proximity indicator         |
+| LED 2              | GPIO 17   | Proximity indicator         |
+| LED 3              | GPIO 19   | Proximity indicator         |
+| LED 4              | GPIO 21   | Proximity indicator         |
+| LED 5              | GPIO 22   | Proximity indicator         |
+| LED 6              | GPIO 23   | Proximity indicator         |
+| LED 7              | GPIO 25   | Proximity indicator         |
+| Joystick X-Axis    | GPIO 34   | Manual servo angle control  |
+| Joystick Button    | GPIO 14   | Mode toggle (AUTO / MANUAL) |
+
+### Power Connections
+| Device       | Connection                     |
+| ------------ | ------------------------------ |
+| HC-SR04 VCC  | 5V                             |
+| HC-SR04 GND  | GND                            |
+| Servo VCC    | 5V                             |
+| Servo GND    | GND                            |
+| LEDs         | Through resistors to GPIO pins |
+| Buzzer       | GPIO → Buzzer → GND            |
+| Joystick VCC | 3.3V                           |
+| Joystick GND | GND                            |
+
 
 ## Installation & Setup
 
